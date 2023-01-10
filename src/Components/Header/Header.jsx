@@ -4,7 +4,7 @@ import styles from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <div className={styles.navMaine}>
+    <header className={styles.navMaine}>
       <nav className='#4db6ac teal lighten-2'>
         <div className='nav-wrapper'>
           <div className={styles.refs}>
@@ -25,7 +25,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
