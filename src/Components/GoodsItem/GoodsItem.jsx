@@ -9,6 +9,7 @@ const GoodsItem = (props) => {
     price,
     imgSrc,
     displayType,
+    addItem2Busket,
   } = props;
   return (
     <div className={styles.itemContainer}>
@@ -25,8 +26,19 @@ const GoodsItem = (props) => {
             <p>{displayDescription}</p>
           </div>
           <div className={styles.cardAction}>
-            <button className='btn'>Купить</button>
-            <span>{price.finalPrice} руб.</span>
+            <button
+              className='btn'
+              onClick={() =>
+                addItem2Busket({
+                  mainId,
+                  displayName,
+                  price,
+                })
+              }
+            >
+              Купить
+            </button>
+            <span>{price.finalPrice} v-b.</span>
           </div>
         </div>
       </div>

@@ -1,10 +1,8 @@
 import React from "react";
 import GoodsItem from "../GoodsItem/GoodsItem";
-import styles from './GoodsList.module.scss'
+import styles from "./GoodsList.module.scss";
 
-const GoodsList = (props) => {
-  const { goods = [] } = props;
-
+const GoodsList = ({ goods, addItem2Busket }) => {
   if (!goods.length) {
     return <h3>Nothing here...</h3>;
   }
@@ -16,6 +14,7 @@ const GoodsList = (props) => {
           key={good.mainId}
           {...good}
           imgSrc={good.displayAssets[0].url}
+          addItem2Busket={addItem2Busket}
         />
       ))}
     </div>
