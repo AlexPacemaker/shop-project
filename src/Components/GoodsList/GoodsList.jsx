@@ -1,5 +1,6 @@
 import React from "react";
 import GoodsItem from "../GoodsItem/GoodsItem";
+import styles from './GoodsList.module.scss'
 
 const GoodsList = (props) => {
   const { goods = [] } = props;
@@ -9,7 +10,7 @@ const GoodsList = (props) => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       {goods.map((good) => (
         <GoodsItem
           key={good.mainId}

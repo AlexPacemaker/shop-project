@@ -1,21 +1,32 @@
 import React from "react";
+import styles from "./GoodsItem.module.scss";
 
 const GoodsItem = (props) => {
-  const { mainId, displayName, description, price, imgSrc } = props;
+  const {
+    mainId,
+    displayName,
+    displayDescription,
+    price,
+    imgSrc,
+    displayType,
+  } = props;
   return (
-    <div className='row'>
-      <div className='col s12 m6'>
-        <div className='card' id={mainId}>
-          <div className='card-image'>
-            <img src={imgSrc} alt={displayName} />
-            <span className='card-title'>{displayName}</span>
+    <div className={styles.itemContainer}>
+      <div>
+        <div className={styles.card} id={mainId}>
+          <div className={styles.imgContainer}>
+            <img src={imgSrc} alt={displayName} width={220} height={220} />
           </div>
-          <div className='card-content'>
-            <p>{description}</p>
+          <div className={styles.title}>
+            <span>{displayName}</span>
           </div>
-          <div className='card-action'>
-            <span className="right">{price.finalPrice}</span>
+          <div className={styles.displayDescription}>
+            <span>{displayType}</span>
+            <p>{displayDescription}</p>
+          </div>
+          <div className={styles.cardAction}>
             <button className='btn'>Купить</button>
+            <span>{price.finalPrice} руб.</span>
           </div>
         </div>
       </div>
