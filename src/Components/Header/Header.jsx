@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.navMaine}>
       <nav className='#e57373 red lighten-2'>
-        <div className='nav-wrapper'>
+        <div>
           <div className={styles.refs}>
             <a href='#s' className='brand-logo'>
               Fortnite React Shop

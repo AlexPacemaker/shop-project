@@ -2,7 +2,7 @@ import React from "react";
 import GoodsItem from "../GoodsItem/GoodsItem";
 import styles from "./GoodsList.module.scss";
 
-const GoodsList = ({ goods, addItem2Busket }) => {
+const GoodsList = ({ goods, addItem2Basket }) => {
   if (!goods.length) {
     return <h3>Nothing here...</h3>;
   }
@@ -14,7 +14,7 @@ const GoodsList = ({ goods, addItem2Busket }) => {
           key={good.mainId}
           {...good}
           imgSrc={good.displayAssets[0].url}
-          addItem2Busket={addItem2Busket}
+          addItem2Basket={addItem2Basket}
         />
       ))}
     </div>

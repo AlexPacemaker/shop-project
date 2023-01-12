@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "./Cart.module.scss";
 
-const Cart = (props) => {
-  const { quantity = 0 } = props;
+const Cart = ({ quantity, handleBasketShow }) => {
   return (
-    <div className={styles.cart}>
+    <div className={styles.cart} onClick={handleBasketShow}>
       <div className='black white-text'>
         <i className='material-icons'>shopping_cart</i>
         {quantity ? (

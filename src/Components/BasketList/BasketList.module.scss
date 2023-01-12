@@ -1,0 +1,34 @@
+.basketMain {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(227, 235, 235);
+  width: 60rem;
+  max-width: 95%;
+  box-shadow: 2px 2px 20px 2px magenta;
+  padding: 1px;
+  border: 3px ridge silver;
+  border-radius: 10px;
+  i {
+    &:hover {
+      cursor: pointer;
+    }
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    z-index: 5;
+  }
+  animation: show 500ms ease-in-out;
+}
+
+@keyframes show {
+  from {
+    top: 0%;
+    opacity: 0;
+  }
+  to {
+    top: 40%;
+    opacity: 1;
+  }
+}

@@ -3,6 +3,7 @@
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
+  
   return (
     <footer className={styles.footer}>
       <footer className='page-footer #4db6ac teal lighten-2'>

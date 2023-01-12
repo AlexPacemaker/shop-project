@@ -1,0 +1,18 @@
+.basketItem {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+
+  span i {
+    color: black;
+  }
+
+  img {
+    vertical-align: middle;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  svg {
+    color: blue($color: #000000);
+  }
+}

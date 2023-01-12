@@ -9,8 +9,16 @@ const GoodsItem = (props) => {
     price,
     imgSrc,
     displayType,
-    addItem2Busket,
+    addItem2Basket,
   } = props;
+
+  const varAddItemFunc = () =>
+    addItem2Basket({
+      mainId,
+      displayName,
+      price,
+    });
+
   return (
     <div className={styles.itemContainer}>
       <div>
@@ -26,16 +34,7 @@ const GoodsItem = (props) => {
             <p>{displayDescription}</p>
           </div>
           <div className={styles.cardAction}>
-            <button
-              className='btn'
-              onClick={() =>
-                addItem2Busket({
-                  mainId,
-                  displayName,
-                  price,
-                })
-              }
-            >
+            <button className='btn' onClick={varAddItemFunc}>
               Купить
             </button>
             <span>{price.finalPrice} v-b.</span>
