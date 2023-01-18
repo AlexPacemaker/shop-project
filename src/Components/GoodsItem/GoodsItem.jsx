@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ShopContext } from "../../context";
 import styles from "./GoodsItem.module.scss";
 
 const GoodsItem = (props) => {
@@ -9,8 +10,10 @@ const GoodsItem = (props) => {
     price,
     imgSrc,
     displayType,
-    addItem2Basket,
   } = props;
+
+  //функция добавления товара в корзину
+  const { addItem2Basket } = useContext(ShopContext);
 
   const varAddItemFunc = () =>
     addItem2Basket({
