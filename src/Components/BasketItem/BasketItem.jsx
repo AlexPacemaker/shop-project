@@ -4,6 +4,9 @@ import React from "react";
 import styles from "./BasketItem.module.scss";
 import { useContext } from "react";
 import { ShopContext } from "../../context";
+import add from "../../Assets/svg/add.svg";
+import remove from "../../Assets/svg/remove.svg";
+import close from "../../Assets/svg/close.svg";
 
 const BasketItem = ({ mainId, displayName, price, quantity }) => {
   const removerItem = () => removeFromBasket(mainId);
@@ -16,14 +19,14 @@ const BasketItem = ({ mainId, displayName, price, quantity }) => {
       <li className='collection-item'>
         {displayName}{" "}
         <img
-          src='/img/add.svg'
+          src={add}
           alt='add'
           width={25}
           onClick={() => incrementQty(mainId)}
         />{" "}
         x{quantity}{" "}
         <img
-          src='/img/remove.svg'
+          src={remove}
           alt='remove'
           width={25}
           onClick={() => decrementQty(mainId)}
@@ -31,7 +34,7 @@ const BasketItem = ({ mainId, displayName, price, quantity }) => {
         = {price.finalPrice * quantity}
         <img
           className='right'
-          src='/img/close.svg'
+          src={close}
           alt='closeBtn'
           width={25}
           title='Удалить'

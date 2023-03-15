@@ -19,3 +19,5 @@
     - SSCS как препроцессор CSS
     - CSS-Модули для лучшей организации CSS
     - Библиотека Marerialize CSS для создания некоторых компонентов
+
+https://alexpacemaker.github.io/shop-project
