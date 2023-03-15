@@ -25,9 +25,10 @@
     vertical-align: middle;
     &:hover {
       cursor: pointer;
+      opacity: 0.8;
+      border-radius: 25px;
+      border: 0 solid silver;
+      box-shadow: 1px 1px 5px 5px magenta;
     }
-  }
-  svg {
-    color: blue($color: #000000);
   }
 }

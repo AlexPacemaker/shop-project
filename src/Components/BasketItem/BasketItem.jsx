@@ -31,7 +31,7 @@ const BasketItem = ({ mainId, displayName, price, quantity }) => {
           className='right'
           src='/img/close.svg'
           alt='closeBtn'
-          width={20}
+          width={25}
           title='Удалить'
           onClick={removerItem}
         />
