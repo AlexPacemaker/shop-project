@@ -1,3 +1,5 @@
+//компонент элемент, который добавляется и отображается в корзине
+
 import React from "react";
 import styles from "./BasketItem.module.scss";
 import { useContext } from "react";

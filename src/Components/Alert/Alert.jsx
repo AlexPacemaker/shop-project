@@ -1,3 +1,5 @@
+//всплывающая подсказка об добавлении товара
+
 import React, { useEffect, useContext } from "react";
 import { ShopContext } from "../../context";
 import styles from "./Alert.module.scss";

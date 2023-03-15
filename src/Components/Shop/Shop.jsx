@@ -1,3 +1,5 @@
+//контейнер, где происходит подгрузка API и рендер Cart, Proloader, Goodlist, BasketList and Alert
+
 import React, { useEffect, useContext } from "react";
 import { ShopContext } from "../../context";
 import { API_KEY, API_URL } from "../../config";

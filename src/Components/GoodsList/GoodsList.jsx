@@ -1,3 +1,5 @@
+//мейн для рендера карточек товара
+
 import React, { useContext } from "react";
 import GoodsItem from "../GoodsItem/GoodsItem";
 import { ShopContext } from "../../context";

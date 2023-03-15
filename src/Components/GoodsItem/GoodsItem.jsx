@@ -1,3 +1,5 @@
+//карточка товара
+
 import React, { useContext } from "react";
 import { ShopContext } from "../../context";
 import styles from "./GoodsItem.module.scss";

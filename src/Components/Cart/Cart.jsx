@@ -1,3 +1,5 @@
+//компонент значок корзины
+
 import React, { useContext } from "react";
 import { ShopContext } from "../../context";
 import styles from "./Cart.module.scss";
