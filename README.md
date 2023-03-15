@@ -9,6 +9,7 @@
     - SCSS  as CSS preprocessor
     - CSS-Modules  for better organisation of CSS
     - Materialize CSS for make some Components
+    - Desctop only by now
 
     - React 18 в качестве основной библиотеки
     - JavaScript как основной язык
@@ -19,5 +20,6 @@
     - SSCS как препроцессор CSS
     - CSS-Модули для лучшей организации CSS
     - Библиотека Marerialize CSS для создания некоторых компонентов
+    - Пока только десктоп версия
 
 https://alexpacemaker.github.io/shop-project
