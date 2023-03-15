@@ -5,6 +5,10 @@
   user-select: none;
 }
 
+html {
+  max-width: 1400px;
+}
+
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: rgb(5, 2, 2);
