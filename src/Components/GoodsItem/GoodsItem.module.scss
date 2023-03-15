@@ -1,3 +1,18 @@
+//Подключение шрифтов
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../Assets/Fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratT";
+  src: url(../../Assets/Fonts/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
 .itemContainer {
   width: 320px;
   height: 420px;
@@ -6,8 +21,8 @@
   margin: 20px 15px 10px 0px;
   padding: 20px;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Montserrat";
+  font-weight: 600;
 
   &:hover {
     box-shadow: 2px 2px 20px 10px magenta;
@@ -27,8 +42,9 @@
 
   .title {
     span {
+      display: inline-block;
       font-size: 18px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       font-weight: bold;
     }
   }
@@ -48,10 +64,14 @@
     justify-content: space-around;
     align-items: flex-end;
     margin-top: 10px;
+    button {
+      border-radius: 10px;
+      font-size: 20px;
+    }
   }
 
   span {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
   }
 }
