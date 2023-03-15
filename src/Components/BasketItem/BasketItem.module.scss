@@ -1,6 +1,21 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../Assets/Fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratT";
+  src: url(../../Assets/Fonts/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
 .basketItem {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat";
   font-size: 25px;
+  font-weight: 600;
 
   span i {
     color: black;

@@ -1,15 +1,20 @@
+
+
 .basketMain {
+ 
   position: fixed;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(227, 235, 235);
   width: 60rem;
   max-width: 95%;
+  max-height: 80%;
   box-shadow: 2px 2px 20px 2px magenta;
   padding: 1px;
   border: 3px ridge silver;
   border-radius: 10px;
+  overflow-y: auto;
   i {
     &:hover {
       cursor: pointer;
