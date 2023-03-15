@@ -3,14 +3,7 @@ import { ShopContext } from "../../context";
 import styles from "./GoodsItem.module.scss";
 
 const GoodsItem = (props) => {
-  const {
-    mainId,
-    displayName,
-    displayDescription,
-    price,
-    imgSrc,
-    displayType,
-  } = props;
+  const { mainId, displayName, price, imgSrc } = props;
 
   //функция добавления товара в корзину
   const { addItem2Basket } = useContext(ShopContext);
@@ -32,10 +25,7 @@ const GoodsItem = (props) => {
           <div className={styles.title}>
             <span>{displayName}</span>
           </div>
-          <div className={styles.displayDescription}>
-            <span>{displayType}</span>
-            <p>{displayDescription}</p>
-          </div>
+
           <div className={styles.cardAction}>
             <button className='btn' onClick={varAddItemFunc}>
               Купить

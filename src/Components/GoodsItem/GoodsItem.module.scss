@@ -1,6 +1,4 @@
 .itemContainer {
-  display: flex;
-  flex-direction: column;
   width: 320px;
   height: 420px;
   border: 0px solid silver;
@@ -12,7 +10,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   &:hover {
-    box-shadow: 2px 2px 10px 5px yellow;
+    box-shadow: 2px 2px 20px 10px magenta;
     transform: translateY(-5px);
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
@@ -22,7 +20,7 @@
       padding: 10px;
       margin-bottom: 10px;
       border: 1px solid rgb(97, 242, 232);
-      border-radius: 10px;
+      border-radius: 15px;
       margin: 15px 10px 10px 7px;
     }
   }
@@ -40,14 +38,15 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    height: 390px;
+    flex-grow: 1;
+    height: 380px;
   }
 
   .cardAction {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: last baseline;
+    justify-content: space-around;
+    align-items: flex-end;
     margin-top: 10px;
   }
 
