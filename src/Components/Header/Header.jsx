@@ -13,7 +13,10 @@ const Header = () => {
             </a>
             <ul id='nav-mobile' className='right hide-on-med-and-down'>
               <li>
-                <a className={styles.rep} href='#s'>
+                <a
+                  className={styles.rep}
+                  href='https://github.com/AlexPacemaker/shop-project'
+                >
                   Repository
                 </a>
               </li>
