@@ -6,7 +6,7 @@ const Footer = () => {
   
   return (
     <footer className={styles.footer}>
-      <footer className='page-footer #4db6ac teal lighten-2'>
+      <footer className='page-footer #c5cae9 indigo lighten-4'>
         <div className='black-text footer-copyright'>
           <div className='container'>
             PaceMaker © {new Date().getFullYear()}

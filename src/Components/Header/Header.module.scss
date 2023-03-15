@@ -1,13 +1,19 @@
 .navMaine {
-  width: 1300px;
-  border: 1px ridge silver;
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0px ridge silver;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px 2px grey;
+  box-shadow: 2px 2px 10px 5px silver;
   padding: 5px;
-  margin: 10px 0px 10px 100px;
   .refs a {
     color: black;
     font-size: 30px;
     font-weight: 700;
+    margin-left: 120px;
+  }
+  .rep {
+    margin-right: 40px;
   }
 }
