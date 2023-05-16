@@ -1,3 +1,10 @@
+@mixin header_colors {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
 .navMaine {
   width: 1450px;
   margin: 0 auto;
@@ -8,11 +15,13 @@
   box-shadow: 2px 2px 10px 5px silver;
   padding: 5px;
   .refs a {
-    color: black;
-    font-size: 30px;
-    font-weight: 700;
-    margin-left: 20px;
+    @include header_colors();
   }
+
+  .refs span {
+    @include header_colors();
+  }
+
   .rep {
     margin-right: 40px;
   }

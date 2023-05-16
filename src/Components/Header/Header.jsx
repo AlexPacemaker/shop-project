@@ -2,14 +2,18 @@
 import styles from "./Header.module.scss";
 
 const Header = () => {
+  const handleClick = () => {
+    window.location.reload();
+  };
+
   return (
     <header className={styles.navMaine}>
       <nav className='#c5cae9 indigo lighten-4'>
         <div>
           <div className={styles.refs}>
-            <a href='#s' className='brand-logo'>
+            <span onClick={handleClick} className='brand-logo'>
               Fortnite React Shop
-            </a>
+            </span>
             <ul id='nav-mobile' className='right hide-on-med-and-down'>
               <li>
                 <a

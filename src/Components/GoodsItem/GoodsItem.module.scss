@@ -1,33 +1,17 @@
-//Подключение шрифтов
-@font-face {
-  font-family: "Montserrat";
-  src: url(../../Assets/Fonts/Montserrat-Regular.ttf);
-  font-weight: regular;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MontserratT";
-  src: url(../../Assets/Fonts/Montserrat-SemiBold.ttf);
-  font-weight: bold;
-  font-style: normal;
-}
-
 .itemContainer {
   width: 320px;
   height: 420px;
   border: 0px solid silver;
   border-radius: 20px;
   margin: 20px 15px 10px 0px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  font-family: "Montserrat";
-  font-weight: 600;
+  transition: 0.4s ease-in-out;
 
   &:hover {
-    box-shadow: 2px 2px 20px 10px magenta;
+    box-shadow: 0 0 15px 5px magenta;
     transform: translateY(-5px);
-    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
   .imgContainer {

@@ -11,7 +11,7 @@ const Footer = () => {
           <div className='container'>
             PaceMaker © {new Date().getFullYear()}
             <a className='black-text text-lighten-4 right' href='#!'>
-              More Links
+            alexandr@pacemaker76.ru
             </a>
           </div>
         </div>
