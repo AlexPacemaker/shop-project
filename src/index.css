@@ -5,12 +5,22 @@
   user-select: none;
 }
 
-html {
-  max-width: 1500px;
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Assets/Fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+  font-style: normal;
 }
 
-body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+@font-face {
+  font-family: "MontserratT";
+  src: url(./Assets/Fonts/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-family: "Montserrat";
   background: rgb(5, 2, 2);
   color: rgb(0, 0, 0);
 }

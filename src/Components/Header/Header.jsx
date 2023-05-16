@@ -1,5 +1,4 @@
 // Header component
-
 import styles from "./Header.module.scss";
 
 const Header = () => {
@@ -16,8 +15,27 @@ const Header = () => {
                 <a
                   className={styles.rep}
                   href='https://github.com/AlexPacemaker/shop-project'
+                  target='blank'
                 >
-                  Repository
+                  Code Source
+                </a>
+              </li>
+              <li>
+                <a
+                  className={styles.rep}
+                  href='https://alexpacemaker.github.io/portfolio/'
+                  target='blank'
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  className={styles.rep}
+                  href='https://github.com/AlexPacemaker'
+                  target='blank'
+                >
+                  GitHub
                 </a>
               </li>
             </ul>
