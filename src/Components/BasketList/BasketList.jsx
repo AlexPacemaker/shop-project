@@ -1,5 +1,4 @@
 //мейн корзины, где рендерятся айтемы корзины (bascket items)
-
 import React, { useContext } from "react";
 import { ShopContext } from "../../context";
 import BasketItem from "../BasketItem/BasketItem";
