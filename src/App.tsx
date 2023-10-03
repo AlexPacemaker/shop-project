@@ -3,7 +3,7 @@ import Header from "./Components/Header/Header";
 import Shop from "./Components/Shop/Shop";
 import { ContextProvider } from "./context";
 
-function App() {
+const App = (): JSX.Element => {
   return (
     <div>
       <Header />
@@ -13,6 +13,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
